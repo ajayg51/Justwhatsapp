@@ -47,14 +47,23 @@ public class MainActivity extends AppCompatActivity {
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(countryCode.getText().toString().length()==0){
+                String ccode=countryCode.getText().toString();
+                String phone=phoneArea.getText().toString();
+                String text="Invalid mobile number.";
+                if(ccode.length()==0){
                     countryCode.setText("+91");
                 }
-                phoneNo=countryCode.getText().toString();
-                phoneNo=phoneNo.concat(phoneArea.getText().toString());
-                Uri uri=Uri.parse("https://wa.me/"+phoneNo);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                if(phone.length()==0 || phone.length()==text.length()){
+                    phoneArea.setText(text);
+                }
+                else{
+                    phoneNo=countryCode.getText().toString();
+                    phoneNo=phoneNo.concat(phoneArea.getText().toString());
+                    Uri uri=Uri.parse("https://wa.me/"+phoneNo);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);
+                }
+                return;
             }
         });
     }

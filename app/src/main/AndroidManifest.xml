@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/justwhatsapplogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/justwhatsapplogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Justwhatsapp">
         <activity
@@ -20,6 +20,5 @@
         </activity>
 
     </application>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
 </manifest>
