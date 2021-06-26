@@ -12,6 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="Enter country code and phone number to chat on whatsapp without saving their phone number."
+            android:text="Enter country code and phone number to chat on whatsapp without saving their phone number.\n*****\n# Enter your own whatsapp number and see the magic."
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/Ccode"
             app:layout_constraintEnd_toEndOf="parent"
