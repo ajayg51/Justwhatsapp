@@ -80,14 +80,14 @@ public class MainActivity extends AppCompatActivity {
                         return;
                     }
                     else{
-                        Snackbar.make(linearLayout,Html.fromHtml("<font color='white'>Connection lost!!</font>"),Snackbar.LENGTH_SHORT)
+                        Snackbar.make(linearLayout,Html.fromHtml("Connection lost!!"),Snackbar.LENGTH_SHORT)
                                 .setAction(Html.fromHtml("<font color='yellow'>Connect</font>"), new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
                                         openSettings();
                                     }
                                 })
-                                .setDuration(2000)
+                                .setDuration(5000)
                                 .show();
                         return;
                     }
