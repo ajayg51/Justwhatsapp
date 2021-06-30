@@ -1,4 +1,4 @@
-## Justwhatsapp | Chat with anyone on whatsapp without any need of saving their number.
+## Justwhatsapp | Lets you open Whatsapp chat of anyone on Whatsapp without any need of saving their mobile number, created using JAVA and XML.
 ### Technologies
 ```
 * Java
